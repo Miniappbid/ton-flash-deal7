@@ -4,7 +4,7 @@ declare global {
       WebApp: {
         ready: () => void;
         expand: () => void;
-        showConfirm: (message: string) => boolean;
+        showConfirm: (msg: string) => boolean;
         initData: string;
         initDataUnsafe: Record<string, any>;
       };
