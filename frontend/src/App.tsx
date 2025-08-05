@@ -13,7 +13,7 @@ function App() {
     }
 
     // Загрузка текущего состояния аукциона
-    fetch("http://localhost:3001/api/auction")
+    fetch("https://ton-flash-deal7.onrender.com")
       .then((res) => {
         if (!res.ok) throw new Error("Network error");
         return res.json();
@@ -42,7 +42,7 @@ function App() {
     if (!confirmed) return;
 
     // Отправляем запрос на сервер
-    fetch("http://localhost:3001/api/auction/view", {
+    fetch("https://ton-flash-deal7.onrender.com", {
       method: "POST",
     })
       .then((res) => res.json())
